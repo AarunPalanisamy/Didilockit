@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200">
+  
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7A6BFF"/>
+      <stop offset="0.55" stop-color="#5B4BFF"/>
+      <stop offset="1" stop-color="#3A2EA8"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.3" cy="0.2" r="0.7">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <defs>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="28" stdDeviation="34" flood-color="#5B4BFF" flood-opacity="0.35"/>
+    </filter>
+    <clipPath id="tile"><rect x="340" y="150" width="520" height="520" rx="128"/></clipPath>
+  </defs>
+  <g filter="url(#shadow)">
+    <rect x="340" y="150" width="520" height="520" rx="128" fill="url(#bg)"/>
+  </g>
+  <g clip-path="url(#tile)">
+    <rect x="340" y="150" width="520" height="520" fill="url(#glow)"/>
+    <g transform="translate(340 150) scale(0.5078)">
+  <g fill="none" stroke="#FFFFFF" stroke-opacity="0.42" stroke-width="34" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M214 330 V262 a48 48 0 0 1 48 -48 H330"/>
+    <path d="M694 214 H762 a48 48 0 0 1 48 48 V330"/>
+    <path d="M214 694 V762 a48 48 0 0 0 48 48 H330"/>
+    <path d="M810 694 V762 a48 48 0 0 1 -48 48 H694"/>
+  </g>
+  <circle cx="726" cy="298" r="24" fill="#FF7A59"/>
+  <path d="M410 478 V396 a102 102 0 0 1 204 0 V478" fill="none" stroke="#FFFFFF" stroke-width="62" stroke-linecap="round"/>
+  <rect x="340" y="452" width="344" height="292" rx="72" fill="#FFFFFF"/>
+  <path d="M436 600 L492 654 L592 552" fill="none" stroke="#5B4BFF" stroke-width="46" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+  </g>
+  <text x="600" y="860" text-anchor="middle" font-family="Plus Jakarta Sans" font-weight="700" font-size="112" fill="#15151A" letter-spacing="-2">Did I Lock It?</text>
+  <text x="600" y="950" text-anchor="middle" font-family="Plus Jakarta Sans" font-weight="500" font-size="54" fill="#6B6B78">Proof, not memory.</text>
+</svg>

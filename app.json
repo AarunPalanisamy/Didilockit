@@ -1,0 +1,53 @@
+{
+  "expo": {
+    "name": "Did I Lock It?",
+    "slug": "did-i-lock-it",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "backgroundColor": "#F4F3F8",
+    "newArchEnabled": true,
+    "icon": "./assets/images/icon.png",
+    "splash": {
+      "image": "./assets/images/splash-icon.png",
+      "backgroundColor": "#F4F3F8",
+      "resizeMode": "contain"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.example.didilockit"
+    },
+    "android": {
+      "package": "com.example.didilockit",
+      "edgeToEdgeEnabled": true,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#5B4BFF"
+      }
+    },
+    "web": {
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 260,
+          "resizeMode": "contain",
+          "backgroundColor": "#F4F3F8"
+        }
+      ],
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Did I Lock It? uses the camera to scan a quick photo or 3-second clip proving you locked the door or switched something off. Media never leaves your phone.",
+          "microphonePermission": false,
+          "recordAudioAndroid": false
+        }
+      ],
+      "expo-video",
+      "expo-font"
+    ]
+  }
+}
